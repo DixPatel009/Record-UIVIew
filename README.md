@@ -12,7 +12,7 @@ To setup Record-UIVIew, add the `Recorder.swift`and `ImageToVideo.swift` file to
 ### For Swift
 
 
-class viewController: UIViewController {
+   class viewController: UIViewController {
     
     @IBOutlet weak var screenRecoderView: UIView!
     
@@ -33,6 +33,6 @@ class viewController: UIViewController {
         }
     }
     
-}
+    }
 
 
