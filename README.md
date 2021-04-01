@@ -9,7 +9,8 @@ To setup Record-UIVIew, add the `Recorder.swift`and `ImageToVideo.swift` file to
 
 ## Example Usage
 
-# For Swift
+### For Swift
+
 
 class viewController: UIViewController {
     
@@ -33,3 +34,5 @@ class viewController: UIViewController {
     }
     
 }
+
+
