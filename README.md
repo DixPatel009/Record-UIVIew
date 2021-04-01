@@ -12,26 +12,26 @@ To setup Record-UIVIew, add the `Recorder.swift`and `ImageToVideo.swift` file to
 ### For Swift
 
 
-   class viewController: UIViewController {
+    class viewController: UIViewController {
     
-    @IBOutlet weak var screenRecoderView: UIView!
+      @IBOutlet weak var screenRecoderView: UIView!
     
-    private var screenRecorder = Recorder()
+      private var screenRecorder = Recorder()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.screenRecorder.view = self.screenRecoderView
-    }
+      override func viewDidLoad() {
+          super.viewDidLoad()
+          self.screenRecorder.view = self.screenRecoderView
+      }
     
-    @IBAction func startRecordAction(_ sender: UIButton) {
-        self.screenRecorder.start()
-    }
+      @IBAction func startRecordAction(_ sender: UIButton) {
+           self.screenRecorder.start()
+       }
     
-    @IBAction func StopRecordAction(_ sender: UIButton) {
-        self.screenRecorder.stop { (strUrl) in
-            print("Final Video Document Direcotry URL : " + strUrl)
-        }
-    }
+      @IBAction func StopRecordAction(_ sender: UIButton) {
+           self.screenRecorder.stop { (strUrl) in
+              print("Final Video Document Direcotry URL : " + strUrl)
+          }
+      }
     
     }
 
